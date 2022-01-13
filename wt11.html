@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Online Art Gallery
+    </title>
+    <meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="wt_css.css"/>
+    <script>
+        var i = 0; 			// Start Point
+var images = [];	// Images Array
+var time = 3000;	// Time Between Switch
+	 
+// Image List
+images[0] = "a4.jpg";
+images[1] = "https://i.etsystatic.com/7835904/r/il/2857b1/2353961543/il_fullxfull.2353961543_4fi7.jpg";
+images[2] = "b1.jpg";
+images[3] = "https://i.pinimg.com/564x/86/a6/b0/86a6b0e72dbe1e2614dc4381973395e5.jpg";
+
+// Change Image
+function changeImg(){
+	document.slide.src = images[i];
+
+	// Check If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;
+
+    </script>
+    <img style="position: absolute;margin-top: 20%;margin-left: 25%; width: 50%;height: 100%;" name="slide" width="400" height="200" />
+
+</head>
+<body style="background-image:url('wood.jpg') ; /* You must set a specified height */
+ /* Center the image */
+background-repeat: no-repeat; /* Do not repeat the image */
+background-size: cover;">
+  <img src="acicon.png" style="width:10%;height:10%;margin-left: 27%;display: inline-block;margin-top:20px;"/>
+    <h1 style="text-align: center;font-size: 60px;margin-top: -90px;">The Art Cafe</h1>
+    <nav class="nav-bar">
+		<ul style="width:65%">
+			<li><a href="wt11.html" target="_self">Home</a></li>
+			<li><a href="index.php" target="_self">Gallery</a></li>
+			<li><a href="abou_us.html" target="_self">About</a></li>
+            <li><a href="contact.html" target="_self">Contact</a></li>
+            <li><a href="cart.php" target="_self">Cart</a></li>
+            <div class="search-container">
+              <form action="phpSearchOp.php" id="myForm" method="post">
+                <input type="text" placeholder="Search.." name="search" id="searchBar">
+                Column: <select name="column">
+                  <option value="artist_name">Name</option>
+                  <option value="name">Category</option>
+                  </select>
+                <input type="submit"class="fa-search" value="search">
+              </form>
+                <ul id="charactersList"></ul>
+              </div>
+             
+		</ul>
+	</nav>
+        
+    <p style="margin-left: 35%; margin-right: 35%; margin-top: 60%; text-align: center; border: 1px solid black;font-size: larger;font-family:'sans serif'; background-color: white;">       The Art Cafe presents 
+      a curated collection 
+        of affordable,
+    contemporary Indian Art 
+   by India's finest emerging
+    and established artists</p>
+    <p style="margin-left: 15%; margin-right: 15%; margin-top: 3%; text-align: center; border: 1px solid black;font-size: larger;font-family:'sans serif';">
+        Welcome to The Art Cafe, the one-stop destination for all the art lovers. Art has always been an integral part of society, 
+        not today but since the time humans had started civilizing. Not just the photographic presentation of the shapes around, 
+        art also tends to depict and share the complete experience of the moment enveloped in those photographs. Love, passion, and admiration of art stem up the basis of The Art Cafe.
+        Each artist associates himself with a certain school of imagination. 
+        With 1000+ artists and over 16,000 artworks on display, The Art Cafe has the presence of multitudinous artworks by various artists. 
+        Diversity, multifariousness and variegation best describe the myriad range of artworks The Art Cafe has.</p>
+	
+</body>
+</html>

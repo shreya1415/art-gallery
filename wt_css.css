@@ -1,0 +1,113 @@
+body {
+    margin : 0;
+    background-color:  white;
+   
+  }
+  .nav-bar {
+    text-align:center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    
+  }
+  .nav-bar ul {
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 0 0 0;
+    background-color: #000;
+  
+  }
+  .nav-bar li {
+    display:block;
+    float:left;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .nav-bar a {
+    color: #fff;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+  }
+  .nav-bar a:hover {
+    text-decoration: underline;
+  }
+    .header {
+      text-align: center;
+    }
+  
+  .info{
+      font-size: 120%;
+      font-family: 'Arial';
+      color: blanchedalmond;
+  }
+  .main {
+      margin: top 150px; /* Add a top margin to avoid content overlay */
+    }
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      
+      margin: 70px;
+      margin-top: 50px;
+      text-align: center;
+      font-family: arial;
+      display: inline-block;
+    }
+    
+    .price {
+      color: grey;
+      font-size: 22px;
+    }
+    
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+    
+    .card button:hover {
+      opacity: 0.7;
+    }
+    .nav-bar .search-container {
+      margin-left: 40%;
+    }
+    
+    .nav-bar input[type=text] {
+      padding: 6px;
+      margin-top: -80px;
+      font-size: 17px;
+      border: none;
+      
+    }
+    
+    
+    .nav-bar .fa-search {
+      padding: 6px;
+      margin-top: 8px;
+      margin-right: 20px;
+      background: rgb(230, 230, 230);
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+      float: right;
+    }
+    
+    .nav-bar .search-container fa-search:hover {
+      background: #ccc;
+    }
+    .nav-bar select {
+      padding: 6px;
+      margin-top: 8px;
+      margin-right: 20px;
+      background: rgb(230, 230, 230);
+      font-size: 17px;
+      border: none;
+    }
